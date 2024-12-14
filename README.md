@@ -1,19 +1,36 @@
 # Proxmox Disk PassThrough Script
 Disk PassThrough Script to PassThrough Physical Disk to Proxmox VM - (excluding those used by ZFS Pools)
-##
-**Description:** 
+#
+### Description:
 
 * Enumerates Physical Disks available on your Proxmox Host (excluding those used by ZFS pools)
 * Lists all Available VMs
 * Lets you pick Disks and a VM, then Generates `qm set` Commands for easy Disk PassThrough
 
-**Key Features:**
+### Key Features: 
 
-* Automatically finds `/dev/disk/by-id` Paths, Prioritizing WWN Identifiers when available.
-* Prevents SCSI Index conflicts by checking your VM’s Current Configuration and Assigning the next available `scsiX` Parameter.
-* Outputs the Final Commands you can run directly or use in your Automation Scripts.
+* Automatically finds `/dev/disk/by-id` Paths, Prioritizing WWN Identifiers when available
+* Prevents SCSI Index conflicts by checking your VM’s Current Configuration and Assigning the next available `scsiX` Parameter
+* Outputs the Final Commands you can run directly or use in your Automation Scripts
 
-**Usage:**
+### Requirements: 
+
+* Must Run on a Proxmox Host with 'qm' and 'zpool' Commands available
+
+* Python 3.x
+
+* Sufficient privileges to run 'lsblk', 'zpool', and 'qm' commands
+
+**NOTE:**
+
+This script does not Automatically Apply Changes; it only Generates 
+the necessary Commands. Users should Carefully Review the Output 
+before Running the Commands
+
+Use at Your Own Risk. Ensure you have proper Backups and understand 
+the implications of PassingThrough Disks to a VM.
+
+### Usage: 
 
 1. Run the Script directly on the Host with the Command: `python3 disk_passthrough.py`
 2. Select the desired Disks from the Enumerated List
