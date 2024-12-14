@@ -12,7 +12,7 @@
 
 **Usage:**
 
-1. Run the Script directly on the Host with the Command: python3 disk\_passthrough.py
+1. Run the Script directly on the Host with the Command: `python3 disk_passthrough.py`
 2. Select the desired Disks from the Enumerated List
 3. Choose your Target VM from the Displayed List
 4. Review and Run the Generated Commands
