@@ -17,7 +17,7 @@
 3. Choose your Target VM from the Displayed List
 4. Review and Run the Generated Commands
 
-**MIT License**
+## MIT License
 
 Copyright (c) 2024 Pedro Anisio Silva
 
