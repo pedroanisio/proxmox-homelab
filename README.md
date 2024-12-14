@@ -1,4 +1,7 @@
-**Description:**
+# Proxmox Disk PassThrough Script
+Disk PassThrough Script to PassThrough Physical Disk to Proxmox VM - (excluding those used by ZFS Pools)
+##
+**Description:** 
 
 * Enumerates Physical Disks available on your Proxmox Host (excluding those used by ZFS pools)
 * Lists all Available VMs
