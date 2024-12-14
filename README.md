@@ -12,19 +12,19 @@ Disk PassThrough Script to PassThrough Physical Disk to Proxmox VM - (excluding 
 
 * Automatically finds `/dev/disk/by-id` Paths, Prioritizing WWN Identifiers when available
 * Prevents SCSI Index conflicts by checking your VM’s Current Configuration and Assigning the next available `scsiX` Parameter
-* Outputs the Final Commands you can run directly or use in your Automation Scripts
+* Outputs the Final Commands you can Run directly or use in your Automation Scripts
 
 ### Requirements: 
 
-* Must Run on a Proxmox Host with 'qm' and 'zpool' Commands available
+* Must Run on a Proxmox Host with `qm` and `zpool` Commands available
 
 * Python 3.x
 
-* Sufficient Privileges to run 'lsblk', 'zpool', and 'qm' commands
+* Sufficient Privileges to run `lsblk`, `zpool`, and `qm` Commands
 
 **NOTE:**
 
-* This script does not Automatically Apply Changes; it only Generates 
+* This Script does not Automatically Apply Changes; it only Generates 
   the necessary Commands. 
 
 * **Use at Your Own Risk** - Users should Carefully Review the Output before Running the Commands.
