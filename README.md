@@ -20,16 +20,16 @@ Disk PassThrough Script to PassThrough Physical Disk to Proxmox VM - (excluding 
 
 * Python 3.x
 
-* Sufficient privileges to run 'lsblk', 'zpool', and 'qm' commands
+* Sufficient Privileges to run 'lsblk', 'zpool', and 'qm' commands
 
 **NOTE:**
 
-This script does not Automatically Apply Changes; it only Generates 
-the necessary Commands. Users should Carefully Review the Output 
-before Running the Commands
+* This script does not Automatically Apply Changes; it only Generates 
+  the necessary Commands. 
 
-Use at Your Own Risk. Ensure you have proper Backups and understand 
-the implications of PassingThrough Disks to a VM.
+* **Use at Your Own Risk** - Users should Carefully Review the Output before Running the Commands.
+
+* Ensure you have proper Backups and Understand the Implications of PassingThrough Disks to a VM.
 
 ### Usage: 
 
